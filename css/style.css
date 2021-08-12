@@ -1,0 +1,17 @@
+.image {
+    width: 200px;
+    margin-top: 10px;
+}
+
+.listas {
+    color: white;
+    text-decoration: none;
+}
+
+.parrafo {
+    font-size: 3;
+}
+
+.slideSize {
+    object-fit: cover;
+}

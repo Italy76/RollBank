@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="pagina de banco con bootstrap">
+    <meta name="keywords" content="bootstrap, navbar, grid">
+    <meta name="author" content="Cristian">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/a2bdd3bea0.js" crossorigin="anonymous"></script>
+    <title>Rolling Bank</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+              <a class="navbar-brand fw-bolder" href="index.html">Rolling Bank</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarRollingBank"  aria-controls="navbarRollingBank" 
+              aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarRollingBank">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active"  href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="pages/quienesSomos.html">¿Quienes somos?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/precios.html">Precios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/seguridad.html">Seguridad</a>
+                    </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pages/roboOextravio.html">Robo o extravio</a>
+                      </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+<main>
+    <section>
+        <div id="bannerPrincipal" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#bannerPrincipal" data-bs-slide-to="0" class="active" 
+              aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#bannerPrincipal" data-bs-slide-to="1" 
+              aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#bannerPrincipal" data-bs-slide-to="2" 
+              aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/1.png" class="d-block w-100 slideSize" alt="imagen1">
+              </div>
+              <div class="carousel-item">
+                <img src="img/2.png" class="d-block w-100 slideSize" alt="imagen2">
+              </div>
+              <div class="carousel-item">
+                <img src="img/3.png" class="d-block w-100 slideSize" alt="imagen3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#bannerPrincipal"
+             data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#bannerPrincipal" 
+            data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+    <section class="container"> 
+      <article class="row my-5">
+      <div class="col-sm-12 col-md-4">
+        <div class="card shadow">
+          <i class="far fa-handshake fa-2x text-danger text-center my-2"></i>
+          <div class="card-body">
+            <h5 class="card-title text-center">Sin sorpresas</h5>
+            <p class="card-text text-center">Somos transparentes, no vas a encontrar letra chica.</p>
+          </div>
+        </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <div class="card shadow">
+            <i class="fas fa-balance-scale fa-2x text-primary text-center my-2"></i>
+            <div class="card-body">
+              <h5 class="card-title text-center">Aprobado</h5>
+              <p class="card-text text-center">Estamos autorizados y regulados por el Banco Central.</p>
+            </div>
+          </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <div class="card shadow">
+              <i class="fas fa-dollar-sign fa-2x text-success text-center my-2"></i>
+              <div class="card-body">
+                <h5 class="card-title text-center">Sin costos</h5>
+                <p class="card-text text-center">Todas tus operaciones diarias <br> están incluidas.</p>
+              </div>
+            </div>
+            </div>
+      </article>
+  </section>
+
+  <section class="container">
+   <article class="row my-5">
+    <div class="col-sm-12 col-md-4">
+     <img src="img/iphone-illustration-sec.png" alt="ipgone representacion" class="w-100">
+    </div>
+    <!--El div con el título incluye todos los demas con las columnas.-->
+    <div class="col-sm-12 col-md-8">
+      <h4 class="card-title text-start">Tu seguridad como prioridad</h4>
+      <p class="card-text text-start">Seguimos las mejores prácticas en cyberseguridad sin complicarte tu operación diaria.</p>
+      <!--Otro sistema de grillas con un row dentro del primero.-->
+      <article class="row my-5">
+      <div class="col-sm-12 col-md-6">
+        <i class="far fa-eye fa-3x text-danger"></i>
+        <h3> Biometría</h3>
+        <p> Nuestra tecnología te permite acceder a tu cuenta usando tu huella digital o tu cara.</p>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <i class="fas fa-balance-scale fa-3x text-primary"></i>
+        <h3> Segundo factor</h3>
+        <p> Usamos un Token invisible para todas las operaciones que hagas.</p>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <i class="fas fa-laptop-house fa-3x text-primary"></i>
+        <h3> Personal</h3>
+        <p> Vas a poder ingresar desde un dispositivo a la vez a tu cuenta.</p>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <i class="fas fa-microchip fa-3x text-success"></i>
+        <h3> 100% encriptado</h3>
+        <p> Usamos un Token invisible para todas las operaciones que hagas. Todas las transacciones son encriptadas para tu mayor seguridad.</p>
+      </div>
+   </article>
+    </div>
+   </article> 
+  </section>
+  <section class="bg-primary">
+    <div>
+      <h3 class="text-white text-center display-2">Rolling te está esperando</h3>
+      <p class="text-white text-center lead parrafo mb-0">Bajá la app y viví una nueva experiecia. Empezá creando tu cuenta sólo con tu DNI.</p>
+    </div>
+    <article class="row">
+      <div class="col-sm-12 md-6 text-center mt-2">
+    <img src="img/badge-apple-store.svg " alt="App Store" class="mb-2">
+    <img src="img/google-play-badge-bb.svg" alt="Google Play" class="mb-2">
+     </div>
+    </article>
+  
+  </section>
+</main>
+
+<footer class="bg-dark text-secondary py-3">
+<section class="container">
+    <div class="fw-bolder text-light d-flex flex-row bd-highlight mb-3">
+        <p class="p-2 bd-highlight"> Rolling Bank</p>
+        <a href="https://fontawesome.com/v5.15/icons/facebook-f?style=brands" 
+        class="text-secondary mx-2 p-2 bd-highlight" target="_blank">
+            <i class="fab fa-facebook-f"></i></a>
+        <a href="https://fontawesome.com/v5.15/icons/twitter?style=brands" 
+        class="text-secondary mx-2 p-2 bd-highlight" target="_blank">
+            <i class="fab fa-twitter"></i></a>
+        <a href="https://fontawesome.com/v5.15/icons/instagram?style=brands" 
+        class="text-secondary mx-2 p-2 bd-highlight" target="_blank">
+            <i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-3">
+             <h3>Navegación</h3> 
+             <ul class="list-unstyled">
+              <li> <a href="pages/quienesSomos.html" class="listas">¿Quienes somos?</a> 
+              </li>
+              <li> <a href="pages/precios.html" class="listas">Precio</a> 
+              </li>
+              <li> <a href="pxages/seguridad.html" class="listas">Seguridad</a>
+              </li>
+              <li> <a href="#" class="listas">Ayuda</a>
+              </li>
+              <li> <a href="pages/roboOextravio.html" class="listas">Extravio</a>
+              </li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-3">
+             <h3>Legales</h3>
+             <ul class="list-unstyled">
+              <li> <a href="#" class="listas">Regimen de transparencia</a> 
+              </li>
+              <li> <a href="#" class="listas">Usuario bancario</a> 
+              </li>
+              <li> <a href="#" class="listas">Conducta bancaria</a>
+              </li>
+              <li> <a href="#" class="listas">Estados contables</a>
+              </li>
+              <li> <a href="#" class="listas">Terminos y condiciones</a>
+              </li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-3">
+              <img src="img/usuariosfinancieros.png" alt="usuarios financieros" class="image">
+            </div>
+            <div class="col">
+              <h3>Unite</h3>
+              <img src="img/badge-apple-store.svg" alt="Apple Store">
+              <img src="img/google-play-badge-bb.svg" alt="Play Store" class="mt-2">
+            </div>
+          </div>
+        </div>
+</section>
+</footer>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
